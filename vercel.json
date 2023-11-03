@@ -8,6 +8,18 @@
   ],
   "routes": [
     {
+      "src": "/api/users(.*)",
+      "dest": "/userRoute.js"
+    },
+    {
+      "src": "/api/income(.*)",
+      "dest": "/incomeRoute.js"
+    },
+    {
+      "src": "/api/expense(.*)",
+      "dest": "/expenseRoute.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "/"
     }
