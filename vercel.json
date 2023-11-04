@@ -9,15 +9,15 @@
   "routes": [
     {
       "src": "/api/users/?(.*)",
-      "dest": "./routes/userRoutes"
+      "dest": "/routes/userRoutes"
     },
     {
       "src": "/api/income/?(.*)",
-      "dest": "./routes/incomeRoute"
+      "dest": "/routes/incomeRoute"
     },
     {
       "src": "/api/expense/?(.*)",
-      "dest": "./routes/expenseRoute"
+      "dest": "/routes/expenseRoute"
     },
     {
       "src": "/(.*)",
