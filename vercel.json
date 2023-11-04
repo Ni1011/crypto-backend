@@ -8,20 +8,20 @@
   ],
   "routes": [
     {
-      "src": "/api/users/?(.*)",
+      "src": "/(.*)",
+      "dest": "/"
+    },
+    {
+      "source": "/api/users/?(.*)",
       "dest": "/routes/userRoutes"
     },
     {
-      "src": "/api/income/?(.*)",
+      "source": "/api/income/?(.*)",
       "dest": "/routes/incomeRoute"
     },
     {
-      "src": "/api/expense/?(.*)",
+      "source": "/api/expense/?(.*)",
       "dest": "/routes/expenseRoute"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/"
     }
   ]
 }
