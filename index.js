@@ -18,7 +18,7 @@ app.use(cors());
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
-  res.send("Hello Amu");
+  res.send("Hello");
 });
 
 app.use("/", router);
