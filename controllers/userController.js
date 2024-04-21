@@ -48,7 +48,7 @@ const getUser = async (req, res) => {
       res.status(200).json(user);
     } else {
       // If no user is found, send a 404 (Not Found) response
-      res.status(404).json({ message: "User not found" });
+      res.status(200).json({ message: "User not found" });
     }
   } catch (error) {
     // Handle any errors and respond with an error message
